@@ -128,7 +128,7 @@ int main ()
     line (x_mid, y_mid/2, xmax, y_mid/2 );
     line (x_mid + x_mid/2, 0, x_mid + x_mid/2,y_mid);
     line (0, y_mid + y_mid/2, x_mid, y_mid + y_mid/2);
-    line (x_mid-x_mid/2,y_mid, x_mid-x_mid/2, ymax) ;
+    line (x_mid-x_mid/2,y_mid, x_mid-x_mid/2, ymax);
 
    // untuk memunculkan kuadran 3
     int x_mid_Q3 = xmax * 1 / 4;   
