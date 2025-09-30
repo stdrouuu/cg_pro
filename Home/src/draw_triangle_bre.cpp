@@ -7,24 +7,24 @@
 int x_mid, y_mid;
 
 //diambil dari soal_3.cpp
-void bre_line(int xa, int ya, int xb, int yb, int color) // titik awal (xa, ya), titik akhir (xb, yb)
+void bre_line(int x_st, int y_st, int x_to, int y_to, int colors)
 {
     int delta_x, delta_y, p;
     int x, y, i;
     int xtemp, ytemp;
 
-    delta_x = xb - xa;
-    delta_y = yb - ya;
+    delta_x = x_to - x_st;
+    delta_y = y_to - y_st;
 
-    if(delta_x >= 0) xtemp = 1;
-    else xtemp: -1;
+    if (delta_x >= 0) xtemp = 1;
+    else xtemp = -1;
 
     if (delta_y >= 0) ytemp = 1;
     else ytemp = -1;
 
-    x = xa;
-    y = ya;
-    putpixel(x + x_mid, y_mid - y, color);
+    x = x_st;
+    y = y_st;
+    putpixel(x + x_mid, y_mid - y, colors);
     i = 0;
 
     if (abs(delta_y) < abs(delta_x))
@@ -43,7 +43,7 @@ void bre_line(int xa, int ya, int xb, int yb, int color) // titik awal (xa, ya),
                 y = y + ytemp;
                 p = p + 2 * abs(delta_y) - 2 * abs(delta_x);
             }
-            putpixel(x + x_mid, y_mid - y, color);
+            putpixel(x + x_mid, y_mid - y, colors);
             i++;
         } while (i <= abs(delta_x));
     }
@@ -63,7 +63,7 @@ void bre_line(int xa, int ya, int xb, int yb, int color) // titik awal (xa, ya),
                 y = y + ytemp;
                 p = p + 2 * abs(delta_x) - 2 * abs(delta_y);
             }
-            putpixel(x + x_mid, y_mid - y, color);
+            putpixel(x + x_mid, y_mid - y, colors);
             i++;
         } while (i <= abs(delta_y));
     }
@@ -106,7 +106,8 @@ int main ()
     setcolor(RED);
     line(0, y_mid, xmax, y_mid);  
     line(x_mid, 0, x_mid, ymax);   
-    triangle(10,10,-30,30);
+    triangle(10,10,30,30); //Segitiga ke arah atas
+    // triangle(10,10,-30,30); //Segitiga ke arah bawah
 
 
     getch();
