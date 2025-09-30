@@ -109,8 +109,9 @@ int main ()
     closegraph();
 }
 
+
 // Masukkan Nilai Koordinat Titik ke-1;0 50
-// Masukkan Nilai Koordinat Titik ke-2;25 25
-// Masukkan Nilai Koordinat Titik ke-3;25 -25
-// Masukkan Nilai Koordinat Titik ke-4;10 -15
-// Masukkan Nilai Koordinat Titik ke-5;-10 -15   
+// Masukkan Nilai Koordinat Titik ke-2;75 20
+// Masukkan Nilai Koordinat Titik ke-3;50 -30
+// Masukkan Nilai Koordinat Titik ke-4;-50 -30
+// Masukkan Nilai Koordinat Titik ke-5;-75 20   
