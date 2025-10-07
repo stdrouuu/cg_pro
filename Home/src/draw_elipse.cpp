@@ -3,7 +3,7 @@
 #include <stdio.h> //printf, scanf
 #include <stdlib.h> //getch()
 #include <conio.h>
-#include <math.h> //untuk bisa menggunakan PI radian
+// #include <math.h> //untuk bisa menggunakan PI radian
 #include <graphics.h>
 
 int x_mid, y_mid;
