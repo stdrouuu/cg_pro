@@ -163,7 +163,7 @@ void drawMidpointEclipseWarnaRed(int x_pusat_ecl, int y_pusat_ecl, int jari2_x_e
     int p_region_2 = (int)(kuadrat_y_ecl * (x_r2 + 0.5) * (x_r2 + 0.5) + kuadrat_x_ecl * (y_r2 - 1) * (y_r2 - 1) - kuadrat_x_ecl * kuadrat_y_ecl);
     do
     {
-        if (p_region_2 > 0)
+        if (p_region_2 > 0)5
         {
             y_r2 = y_r2 - 1;
             p_region_2 = p_region_2 - 2 * kuadrat_x_ecl * y_r2 + kuadrat_x_ecl;
